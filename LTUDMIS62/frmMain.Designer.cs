@@ -33,19 +33,22 @@ namespace LTUDMIS62
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.quảnLýNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.kếtThúcChươngTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.danhMụcTừĐiểnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhMụcHàngHóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhMụcKháchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhMụcKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.sốLiệuPhátSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnNhậpHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnBánHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnThanhToánCôngNợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhMụcHàngHóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.báoCáoDanhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +56,8 @@ namespace LTUDMIS62
             this.báoCáoKiểmKêHàngHóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.báoCáoTổngHợpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,15 +69,10 @@ namespace LTUDMIS62
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.táchTênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhMụcKháchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhMụcKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.đồngHồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.kếtThúcChươngTrìnhToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.đăngNhậpLạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
@@ -80,14 +80,22 @@ namespace LTUDMIS62
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.kếtThứcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.status1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -120,29 +128,32 @@ namespace LTUDMIS62
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
             this.hệThốngToolStripMenuItem.Text = "&Hệ thống";
             // 
-            // đăngNhậpToolStripMenuItem
-            // 
-            this.đăngNhậpToolStripMenuItem.Image = global::LTUDMIS62.Properties.Resources.login;
-            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(365, 36);
-            this.đăngNhậpToolStripMenuItem.Text = "1. Đăng nhập";
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(362, 6);
             // 
-            // quảnLýNgườiDùngToolStripMenuItem
-            // 
-            this.quảnLýNgườiDùngToolStripMenuItem.Image = global::LTUDMIS62.Properties.Resources.user;
-            this.quảnLýNgườiDùngToolStripMenuItem.Name = "quảnLýNgườiDùngToolStripMenuItem";
-            this.quảnLýNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(365, 36);
-            this.quảnLýNgườiDùngToolStripMenuItem.Text = "2. Quản lý người dùng";
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(362, 6);
+            // 
+            // saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1
+            // 
+            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Name = "saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1";
+            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Size = new System.Drawing.Size(365, 36);
+            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Text = "3. Sao lưu và phục hồi dữ liệu";
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(362, 6);
+            // 
+            // kếtThúcChươngTrìnhToolStripMenuItem1
+            // 
+            this.kếtThúcChươngTrìnhToolStripMenuItem1.Name = "kếtThúcChươngTrìnhToolStripMenuItem1";
+            this.kếtThúcChươngTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(365, 36);
+            this.kếtThúcChươngTrìnhToolStripMenuItem1.Text = "4. Kết thúc chương trình";
             // 
             // dữLiệuToolStripMenuItem
             // 
@@ -169,6 +180,25 @@ namespace LTUDMIS62
             this.danhMụcTừĐiểnToolStripMenuItem.Name = "danhMụcTừĐiểnToolStripMenuItem";
             this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(273, 32);
             this.danhMụcTừĐiểnToolStripMenuItem.Text = "1. Danh mục từ điển";
+            // 
+            // danhMụcHàngHóaToolStripMenuItem
+            // 
+            this.danhMụcHàngHóaToolStripMenuItem.Name = "danhMụcHàngHóaToolStripMenuItem";
+            this.danhMụcHàngHóaToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
+            this.danhMụcHàngHóaToolStripMenuItem.Text = "1. Danh mục hàng hóa";
+            this.danhMụcHàngHóaToolStripMenuItem.Click += new System.EventHandler(this.danhMụcHàngHóaToolStripMenuItem_Click);
+            // 
+            // danhMụcKháchToolStripMenuItem
+            // 
+            this.danhMụcKháchToolStripMenuItem.Name = "danhMụcKháchToolStripMenuItem";
+            this.danhMụcKháchToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
+            this.danhMụcKháchToolStripMenuItem.Text = "2. Danh mục khách ";
+            // 
+            // danhMụcKhoToolStripMenuItem
+            // 
+            this.danhMụcKhoToolStripMenuItem.Name = "danhMụcKhoToolStripMenuItem";
+            this.danhMụcKhoToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
+            this.danhMụcKhoToolStripMenuItem.Text = "3. Danh mục kho";
             // 
             // toolStripSeparator4
             // 
@@ -202,12 +232,6 @@ namespace LTUDMIS62
             this.hóaĐơnThanhToánCôngNợToolStripMenuItem.Name = "hóaĐơnThanhToánCôngNợToolStripMenuItem";
             this.hóaĐơnThanhToánCôngNợToolStripMenuItem.Size = new System.Drawing.Size(371, 32);
             this.hóaĐơnThanhToánCôngNợToolStripMenuItem.Text = "3. Hóa đơn thanh toán công nợ";
-            // 
-            // danhMụcHàngHóaToolStripMenuItem
-            // 
-            this.danhMụcHàngHóaToolStripMenuItem.Name = "danhMụcHàngHóaToolStripMenuItem";
-            this.danhMụcHàngHóaToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
-            this.danhMụcHàngHóaToolStripMenuItem.Text = "1. Danh mục hàng hóa";
             // 
             // báoCáoToolStripMenuItem
             // 
@@ -253,9 +277,24 @@ namespace LTUDMIS62
             // 
             // báoCáoTổngHợpToolStripMenuItem
             // 
+            this.báoCáoTổngHợpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem,
+            this.tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem});
             this.báoCáoTổngHợpToolStripMenuItem.Name = "báoCáoTổngHợpToolStripMenuItem";
             this.báoCáoTổngHợpToolStripMenuItem.Size = new System.Drawing.Size(278, 32);
             this.báoCáoTổngHợpToolStripMenuItem.Text = "2. Báo cáo tổng hợp";
+            // 
+            // tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem
+            // 
+            this.tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem.Name = "tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem";
+            this.tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem.Size = new System.Drawing.Size(518, 32);
+            this.tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem.Text = "1. Tổng hợp doanh thu bán hàng theo mặt hàng";
+            // 
+            // tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem
+            // 
+            this.tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem.Name = "tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem";
+            this.tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(518, 32);
+            this.tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem.Text = "2. Tổng hợp doanh thu theo khách hàng";
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -336,18 +375,6 @@ namespace LTUDMIS62
             this.táchTênToolStripMenuItem.Text = "2. Tách Tên";
             this.táchTênToolStripMenuItem.Click += new System.EventHandler(this.táchTênToolStripMenuItem_Click);
             // 
-            // danhMụcKháchToolStripMenuItem
-            // 
-            this.danhMụcKháchToolStripMenuItem.Name = "danhMụcKháchToolStripMenuItem";
-            this.danhMụcKháchToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
-            this.danhMụcKháchToolStripMenuItem.Text = "2. Danh mục khách ";
-            // 
-            // danhMụcKhoToolStripMenuItem
-            // 
-            this.danhMụcKhoToolStripMenuItem.Name = "danhMụcKhoToolStripMenuItem";
-            this.danhMụcKhoToolStripMenuItem.Size = new System.Drawing.Size(293, 32);
-            this.danhMụcKhoToolStripMenuItem.Text = "3. Danh mục kho";
-            // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
@@ -369,23 +396,6 @@ namespace LTUDMIS62
             this.đồngHồToolStripMenuItem.Name = "đồngHồToolStripMenuItem";
             this.đồngHồToolStripMenuItem.Size = new System.Drawing.Size(273, 32);
             this.đồngHồToolStripMenuItem.Text = "4. Đồng hồ";
-            // 
-            // saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1
-            // 
-            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Name = "saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1";
-            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Size = new System.Drawing.Size(365, 36);
-            this.saoLưuVàPhụcHồiDữLiệuToolStripMenuItem1.Text = "3. Sao lưu và phục hồi dữ liệu";
-            // 
-            // toolStripSeparator15
-            // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(362, 6);
-            // 
-            // kếtThúcChươngTrìnhToolStripMenuItem1
-            // 
-            this.kếtThúcChươngTrìnhToolStripMenuItem1.Name = "kếtThúcChươngTrìnhToolStripMenuItem1";
-            this.kếtThúcChươngTrìnhToolStripMenuItem1.Size = new System.Drawing.Size(365, 36);
-            this.kếtThúcChươngTrìnhToolStripMenuItem1.Text = "4. Kết thúc chương trình";
             // 
             // contextMenuStrip1
             // 
@@ -445,6 +455,52 @@ namespace LTUDMIS62
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 37);
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 37);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.status1,
+            this.status2,
+            this.status3});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // status1
+            // 
+            this.status1.Name = "status1";
+            this.status1.Size = new System.Drawing.Size(50, 20);
+            this.status1.Text = "Ready";
+            // 
+            // status2
+            // 
+            this.status2.Name = "status2";
+            this.status2.Size = new System.Drawing.Size(202, 20);
+            this.status2.Text = "Người dùng hiện thời: Admin";
+            // 
+            // status3
+            // 
+            this.status3.Name = "status3";
+            this.status3.Size = new System.Drawing.Size(134, 20);
+            this.status3.Text = "Thời gian hệ thống";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -455,11 +511,6 @@ namespace LTUDMIS62
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "Đăng nhập lại";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripSeparator17
-            // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 37);
             // 
             // toolStripButton2
             // 
@@ -472,11 +523,6 @@ namespace LTUDMIS62
             this.toolStripButton2.ToolTipText = "Giải PT bậc hai";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
-            // toolStripSeparator18
-            // 
-            this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 37);
-            // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -488,12 +534,27 @@ namespace LTUDMIS62
             this.toolStripButton3.ToolTipText = "Kết thúc";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
+            // đăngNhậpToolStripMenuItem
+            // 
+            this.đăngNhậpToolStripMenuItem.Image = global::LTUDMIS62.Properties.Resources.login;
+            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(365, 36);
+            this.đăngNhậpToolStripMenuItem.Text = "1. Đăng nhập";
+            // 
+            // quảnLýNgườiDùngToolStripMenuItem
+            // 
+            this.quảnLýNgườiDùngToolStripMenuItem.Image = global::LTUDMIS62.Properties.Resources.user;
+            this.quảnLýNgườiDùngToolStripMenuItem.Name = "quảnLýNgườiDùngToolStripMenuItem";
+            this.quảnLýNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(365, 36);
+            this.quảnLýNgườiDùngToolStripMenuItem.Text = "2. Quản lý người dùng";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -506,6 +567,8 @@ namespace LTUDMIS62
             this.contextMenuStrip1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,5 +630,12 @@ namespace LTUDMIS62
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel status1;
+        private System.Windows.Forms.ToolStripStatusLabel status2;
+        private System.Windows.Forms.ToolStripStatusLabel status3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem tổngHợpDoanhThuBánHàngTheoMặtHàngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tổngHợpDoanhThuTheoKháchHàngToolStripMenuItem;
     }
 }

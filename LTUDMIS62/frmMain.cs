@@ -63,14 +63,26 @@ namespace LTUDMIS62
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-
+            status1.Text = "Giải phương trình bậc 2";
             GiaiPT f = new GiaiPT();
             f.ShowDialog();
+            status1.Text = "Ready";
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            status3.Text = "Thời gian hệ thống" + System.DateTime.Now.ToString();
+        }
+
+        private void danhMụcHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDMHH f = new FrmDMHH();
+            f.Show();
         }
     }
 }
