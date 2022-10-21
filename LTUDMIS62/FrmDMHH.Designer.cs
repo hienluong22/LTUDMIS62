@@ -30,7 +30,12 @@ namespace LTUDMIS62
         private void InitializeComponent()
         {
             this.grdData = new System.Windows.Forms.DataGridView();
-            this.txtMaNhom = new System.Windows.Forms.TextBox();
+            this.Manhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGvnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sanxuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDVT = new System.Windows.Forms.TextBox();
             this.txtTenHH = new System.Windows.Forms.TextBox();
             this.txtMaHH = new System.Windows.Forms.TextBox();
@@ -46,20 +51,21 @@ namespace LTUDMIS62
             this.btnPrv = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnLast = new System.Windows.Forms.Button();
-            this.Manhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGvnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sanxuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comTenTruong = new System.Windows.Forms.ComboBox();
-            this.comGiaTri = new System.Windows.Forms.ComboBox();
-            this.btnFilter = new System.Windows.Forms.Button();
             this.btnClearFilter = new System.Windows.Forms.Button();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.comGiaTri = new System.Windows.Forms.ComboBox();
+            this.comTenTruong = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CmdEnd = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
+            this.btnaddnew = new System.Windows.Forms.Button();
+            this.txtMaNhom = new System.Windows.Forms.ComboBox();
+            this.btnBC1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -82,12 +88,59 @@ namespace LTUDMIS62
             this.grdData.TabIndex = 0;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellContentClick);
             // 
-            // txtMaNhom
+            // Manhom
             // 
-            this.txtMaNhom.Location = new System.Drawing.Point(823, 190);
-            this.txtMaNhom.Name = "txtMaNhom";
-            this.txtMaNhom.Size = new System.Drawing.Size(103, 22);
-            this.txtMaNhom.TabIndex = 1;
+            this.Manhom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Manhom.DataPropertyName = "Manhom";
+            this.Manhom.HeaderText = "Mã nhóm";
+            this.Manhom.MinimumWidth = 6;
+            this.Manhom.Name = "Manhom";
+            this.Manhom.Width = 95;
+            // 
+            // MaHH
+            // 
+            this.MaHH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MaHH.DataPropertyName = "MaHH";
+            this.MaHH.HeaderText = "Mã hàng";
+            this.MaHH.MinimumWidth = 6;
+            this.MaHH.Name = "MaHH";
+            this.MaHH.Width = 92;
+            // 
+            // TenHH
+            // 
+            this.TenHH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.TenHH.DataPropertyName = "TenHH";
+            this.TenHH.HeaderText = "Tên hàng";
+            this.TenHH.MinimumWidth = 6;
+            this.TenHH.Name = "TenHH";
+            this.TenHH.Width = 98;
+            // 
+            // DVT
+            // 
+            this.DVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.DVT.DataPropertyName = "Dvt";
+            this.DVT.HeaderText = "ĐVT";
+            this.DVT.MinimumWidth = 6;
+            this.DVT.Name = "DVT";
+            this.DVT.Width = 65;
+            // 
+            // DGvnd
+            // 
+            this.DGvnd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.DGvnd.DataPropertyName = "DGvnd";
+            this.DGvnd.HeaderText = "Đơn giá";
+            this.DGvnd.MinimumWidth = 6;
+            this.DGvnd.Name = "DGvnd";
+            this.DGvnd.Width = 86;
+            // 
+            // Sanxuat
+            // 
+            this.Sanxuat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Sanxuat.DataPropertyName = "Sanxuat";
+            this.Sanxuat.HeaderText = "Nước SX";
+            this.Sanxuat.MinimumWidth = 6;
+            this.Sanxuat.Name = "Sanxuat";
+            this.Sanxuat.Width = 92;
             // 
             // txtDVT
             // 
@@ -218,60 +271,6 @@ namespace LTUDMIS62
             this.btnLast.UseVisualStyleBackColor = true;
             this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
-            // Manhom
-            // 
-            this.Manhom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Manhom.DataPropertyName = "Manhom";
-            this.Manhom.HeaderText = "Mã nhóm";
-            this.Manhom.MinimumWidth = 6;
-            this.Manhom.Name = "Manhom";
-            this.Manhom.Width = 95;
-            // 
-            // MaHH
-            // 
-            this.MaHH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.MaHH.DataPropertyName = "MaHH";
-            this.MaHH.HeaderText = "Mã hàng";
-            this.MaHH.MinimumWidth = 6;
-            this.MaHH.Name = "MaHH";
-            this.MaHH.Width = 92;
-            // 
-            // TenHH
-            // 
-            this.TenHH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.TenHH.DataPropertyName = "TenHH";
-            this.TenHH.HeaderText = "Tên hàng";
-            this.TenHH.MinimumWidth = 6;
-            this.TenHH.Name = "TenHH";
-            this.TenHH.Width = 98;
-            // 
-            // DVT
-            // 
-            this.DVT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.DVT.DataPropertyName = "Dvt";
-            this.DVT.HeaderText = "ĐVT";
-            this.DVT.MinimumWidth = 6;
-            this.DVT.Name = "DVT";
-            this.DVT.Width = 65;
-            // 
-            // DGvnd
-            // 
-            this.DGvnd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.DGvnd.DataPropertyName = "DGvnd";
-            this.DGvnd.HeaderText = "Đơn giá";
-            this.DGvnd.MinimumWidth = 6;
-            this.DGvnd.Name = "DGvnd";
-            this.DGvnd.Width = 86;
-            // 
-            // Sanxuat
-            // 
-            this.Sanxuat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Sanxuat.DataPropertyName = "Sanxuat";
-            this.Sanxuat.HeaderText = "Nước SX";
-            this.Sanxuat.MinimumWidth = 6;
-            this.Sanxuat.Name = "Sanxuat";
-            this.Sanxuat.Width = 92;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnClearFilter);
@@ -289,34 +288,33 @@ namespace LTUDMIS62
             this.groupBox1.Text = "Lọc dữ liệu";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label7
+            // btnClearFilter
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Tên trường";
+            this.btnClearFilter.Location = new System.Drawing.Point(206, 114);
+            this.btnClearFilter.Name = "btnClearFilter";
+            this.btnClearFilter.Size = new System.Drawing.Size(105, 23);
+            this.btnClearFilter.TabIndex = 6;
+            this.btnClearFilter.Text = "Hủy lọc dữ liệu";
+            this.btnClearFilter.UseVisualStyleBackColor = true;
+            this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
             // 
-            // label8
+            // btnFilter
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(156, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "=";
+            this.btnFilter.Location = new System.Drawing.Point(36, 114);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(108, 23);
+            this.btnFilter.TabIndex = 5;
+            this.btnFilter.Text = "Lọc dữ liệu";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
-            // label9
+            // comGiaTri
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(216, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 25);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Giá trị";
+            this.comGiaTri.FormattingEnabled = true;
+            this.comGiaTri.Location = new System.Drawing.Point(190, 68);
+            this.comGiaTri.Name = "comGiaTri";
+            this.comGiaTri.Size = new System.Drawing.Size(121, 24);
+            this.comGiaTri.TabIndex = 4;
             // 
             // comTenTruong
             // 
@@ -332,40 +330,116 @@ namespace LTUDMIS62
             this.comTenTruong.TabIndex = 3;
             this.comTenTruong.SelectedIndexChanged += new System.EventHandler(this.comTenTruong_SelectedIndexChanged);
             // 
-            // comGiaTri
+            // label9
             // 
-            this.comGiaTri.FormattingEnabled = true;
-            this.comGiaTri.Location = new System.Drawing.Point(190, 68);
-            this.comGiaTri.Name = "comGiaTri";
-            this.comGiaTri.Size = new System.Drawing.Size(121, 24);
-            this.comGiaTri.TabIndex = 4;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(216, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 25);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Giá trị";
             // 
-            // btnFilter
+            // label8
             // 
-            this.btnFilter.Location = new System.Drawing.Point(36, 114);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(108, 23);
-            this.btnFilter.TabIndex = 5;
-            this.btnFilter.Text = "Lọc dữ liệu";
-            this.btnFilter.UseVisualStyleBackColor = true;
-            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(156, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 17);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "=";
             // 
-            // btnClearFilter
+            // label7
             // 
-            this.btnClearFilter.Location = new System.Drawing.Point(206, 114);
-            this.btnClearFilter.Name = "btnClearFilter";
-            this.btnClearFilter.Size = new System.Drawing.Size(105, 23);
-            this.btnClearFilter.TabIndex = 6;
-            this.btnClearFilter.Text = "Hủy lọc dữ liệu";
-            this.btnClearFilter.UseVisualStyleBackColor = true;
-            this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Tên trường";
+            // 
+            // CmdEnd
+            // 
+            this.CmdEnd.Location = new System.Drawing.Point(1002, 422);
+            this.CmdEnd.Name = "CmdEnd";
+            this.CmdEnd.Size = new System.Drawing.Size(75, 23);
+            this.CmdEnd.TabIndex = 18;
+            this.CmdEnd.Text = "Kết thúc";
+            this.CmdEnd.UseVisualStyleBackColor = true;
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.Enabled = false;
+            this.btnupdate.Location = new System.Drawing.Point(917, 422);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 19;
+            this.btnupdate.Text = "Cập nhật";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.Location = new System.Drawing.Point(832, 422);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(75, 23);
+            this.btndelete.TabIndex = 20;
+            this.btndelete.Text = "Xóa";
+            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // btnedit
+            // 
+            this.btnedit.Location = new System.Drawing.Point(747, 422);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(75, 23);
+            this.btnedit.TabIndex = 21;
+            this.btnedit.Text = "Sửa";
+            this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
+            // 
+            // btnaddnew
+            // 
+            this.btnaddnew.Location = new System.Drawing.Point(662, 422);
+            this.btnaddnew.Name = "btnaddnew";
+            this.btnaddnew.Size = new System.Drawing.Size(75, 23);
+            this.btnaddnew.TabIndex = 22;
+            this.btnaddnew.Text = "Thêm";
+            this.btnaddnew.UseVisualStyleBackColor = true;
+            this.btnaddnew.Click += new System.EventHandler(this.btnaddnew_Click);
+            // 
+            // txtMaNhom
+            // 
+            this.txtMaNhom.FormattingEnabled = true;
+            this.txtMaNhom.Location = new System.Drawing.Point(823, 190);
+            this.txtMaNhom.Name = "txtMaNhom";
+            this.txtMaNhom.Size = new System.Drawing.Size(121, 24);
+            this.txtMaNhom.TabIndex = 23;
+            // 
+            // btnBC1
+            // 
+            this.btnBC1.Location = new System.Drawing.Point(706, 463);
+            this.btnBC1.Name = "btnBC1";
+            this.btnBC1.Size = new System.Drawing.Size(217, 32);
+            this.btnBC1.TabIndex = 24;
+            this.btnBC1.Text = "In kiểm kê theo nhóm hàng";
+            this.btnBC1.UseVisualStyleBackColor = true;
+            this.btnBC1.Click += new System.EventHandler(this.btnBC1_Click);
             // 
             // FrmDMHH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1025, 438);
+            this.ClientSize = new System.Drawing.Size(1095, 519);
+            this.Controls.Add(this.btnBC1);
+            this.Controls.Add(this.txtMaNhom);
+            this.Controls.Add(this.btnaddnew);
+            this.Controls.Add(this.btnedit);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.CmdEnd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnNext);
@@ -382,7 +456,6 @@ namespace LTUDMIS62
             this.Controls.Add(this.txtMaHH);
             this.Controls.Add(this.txtTenHH);
             this.Controls.Add(this.txtDVT);
-            this.Controls.Add(this.txtMaNhom);
             this.Controls.Add(this.grdData);
             this.Name = "FrmDMHH";
             this.Text = "FrmDMHH";
@@ -398,7 +471,6 @@ namespace LTUDMIS62
         #endregion
 
         private System.Windows.Forms.DataGridView grdData;
-        private System.Windows.Forms.TextBox txtMaNhom;
         private System.Windows.Forms.TextBox txtDVT;
         private System.Windows.Forms.TextBox txtTenHH;
         private System.Windows.Forms.TextBox txtMaHH;
@@ -428,5 +500,12 @@ namespace LTUDMIS62
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button CmdEnd;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btnaddnew;
+        private System.Windows.Forms.ComboBox txtMaNhom;
+        private System.Windows.Forms.Button btnBC1;
     }
 }
